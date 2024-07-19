@@ -1,25 +1,10 @@
+import Navbar from "./components/Navbar"
+
 const App = () => {
   return (
     <>
-      <nav className="bg-[#111] border-b border-[#ff4500]">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between">
-            <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-              <a href="/index.html" className="flex flex-shrink-0 items-center mr-4">
-                <img src="../images/logo.png" alt="Jobcoder" className="h-10 w-auto" />
-                <span className="hidden md:block text-2xl ml-2 text-[#ff4500]">Jobcoder</span>
-              </a>
-              <div className="md:ml-auto">
-                <div className="flex-space-x-2">
-                  <a href="/index.html" className="text-[#ff4500]  hover:text-[#ffd700] px-4 py-2">Home</a>
-                  <a href="/jobs.html" className="text-[#ff4500] hover:text-[#ffd700] px-3 py-2">Jobs</a>
-                  <a href="/add-job.html" className="text-[#ff4500] hover:text-[#ffd700] px-3 py-2">Add Job</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
+      
       
       <section className="py-20 mb-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
@@ -98,7 +83,7 @@ const App = () => {
                   <h3 className="text-[#ff4500] text-xl">Backend Django Developer</h3>
                 </div>
                 <div className="text-[#eee] mb-5">
-                  Join our team as a Front-End Developer in Barcelona. We are looking for a motivated individual with a passion for backend Django projects.
+                  Join our team as a Back-End    Developer in Barcelona. We are looking for a motivated individual with a passion for backend Django projects.
                 </div>
                 <h3 className="text-[#ff4500] mb-2">£80K - £90K / Year</h3>
                 <div className="border border-[#ffd700] mb-5"></div>
