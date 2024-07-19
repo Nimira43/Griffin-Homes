@@ -21,10 +21,10 @@ const App = () => {
         </div>
       </nav>
       
-      <section className="bg-[#eee]">
+      <section className="py-20 mb-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="text-center">
-            <h1 className="text-4xl text-[#111] sm:text-5xl md:text-6xl mt-6">
+            <h1 className="text-4xl text-[#111] sm:text-5xl md:text-6xl">
               Find the Right Coding Job
             </h1>
             <p className="my-4 text-xl text-[#ff4500]">
@@ -34,7 +34,7 @@ const App = () => {
         </div>
       </section>
 
-      <section className="bg-[#ccc]">
+      <section className="py-4">
         <div className="container-xl lg:container m-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
             <div className="bg-[#ff4500] text-[#eee] p-6 rounded-lg shadow-md">
@@ -59,9 +59,9 @@ const App = () => {
         </div>
       </section>
 
-      <section className="bg-[#eee]">
+      <section className="px-4 py-10">
         <div className="container-xl lg:container m-auto">
-          <h2 className="text-3xl text-[#111] pt-6 mb-6 text-center">
+          <h2 className="text-3xl text-[#111] mb-6 text-center">
             Browse Jobs
           </h2>
 
@@ -142,8 +142,9 @@ const App = () => {
         </div>
       </section>
 
-      <section>
-
+      <section className="m-auto max-w-lg my-10 px-6">
+        <a href="jobs.html" className="block bg-[#111] text-[#eee] text-center py-4 px-6 rounded-xl hover:text-[#ff4500]">View All
+      Jobs</a>
       </section>
 
     </>
