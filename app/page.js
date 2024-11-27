@@ -1,5 +1,7 @@
-export default function page() {
+const HomePage = () => {
   return (
-    <div>page</div>
-  )
+    <div className='text-3xl'>Home Page</div>
+    )
 }
+ 
+export default HomePage;
