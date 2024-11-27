@@ -1,6 +1,11 @@
+import Link from 'next/link'
+
 const HomePage = () => {
   return (
-    <div className='text-3xl'>Home Page</div>
+    <div>
+      <h1 className='text-3xl'>Home Page</h1>
+      <Link href="/properties">Properties</Link>
+    </div> 
     )
 }
  
