@@ -1,7 +1,7 @@
-const AddPage = () => {
+const AddPropertyPage = () => {
   return ( 
-    <div>Add Page</div>
-   );
+    <div>Add Property Page</div>
+   )
 }
  
-export default AddPage;
+export default AddPropertyPage
