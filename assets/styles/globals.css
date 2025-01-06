@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.heading {
-  font-family: 'League Spartan', sans-serif;
-}
-
 .logo {
   font-family: 'Great Vibes', serif;
 }
