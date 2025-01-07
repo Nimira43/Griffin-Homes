@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import unicorn from '@/assets/images/logo.png'
-import user from '@/assets/images/user-2.png'
+import griffin from '@/assets/images/logo.png'
+import user from '@/assets/images/user.png'
 
 const Navbar = () => {
   return ( 
@@ -39,10 +39,10 @@ const Navbar = () => {
             <Link className='flex flex-shrink-0 items-center' href='/'>
               <Image
                 className='h-10 w-auto'
-                src={unicorn}
-                alt='Unicorn Home'
+                src={griffin}
+                alt='Griffin Homes'
               />
-              <span className='hidden md:block text-grey-light text-2xl ml-2 logo tracking-wider'>Unicorn Homes</span>
+              <span className='hidden md:block text-grey-light text-2xl ml-2 logo tracking-wider'>Griffin Homes</span>
             </Link>
             <div className='hidden md:ml-6 md:block'>
               <div className='flex space-x-2'>
@@ -120,7 +120,7 @@ const Navbar = () => {
                   <Image
                     className='h-8 w-8 rounded-full'
                     src={user}
-                    alt=''
+                    alt='user'
                   />
                 </button>
               </div>
