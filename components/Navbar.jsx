@@ -54,7 +54,7 @@ const Navbar = () => {
               <div className='flex space-x-2'>
                 <Link
                   href='/'
-                  className='text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
+                  className='text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
                 >
                   Home
                 </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
               <div>
                 <button
                   type='button'
-                  className='relative flex rounded-full bg-dark text-sm focus:outline-none'
+                  className='relative flex rounded-full bg-dark text-sm focus:outline-none '
                   id='user-menu-button'
                   aria-expanded='false'
                   aria-haspopup='true'
@@ -179,7 +179,7 @@ const Navbar = () => {
             <div className='space-y-1 px-2 pb-3 pt-2'>
               <Link
                 href='/'
-                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+                className='text-light bg-dark hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
               >
                 Home
               </Link>
