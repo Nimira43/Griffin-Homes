@@ -1,9 +1,13 @@
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import griffin from '@/assets/images/logo.png'
 import user from '@/assets/images/user.png'
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   return ( 
     <nav className='bg-prime-dark border-b border-dark'>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
@@ -15,6 +19,7 @@ const Navbar = () => {
               className='relative inline-flex items-center justify-center rounded-md p-2 text-light bg-dark hover:text-grey-light hover:bg-prime-dark-extra focus:outline-none'
               aria-controls='mobile-menu'
               aria-expanded='false'
+              onClick = { () => setIsMobileMenuOpen((prev) => !prev) }
             >
               <span className='absolute -inset-0.5'></span>
               <span className='sr-only'>Open main menu</span>
@@ -72,8 +77,7 @@ const Navbar = () => {
               <button
                 className='flex items-center text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
               >
-                <i className='fa-brands fa-google text-light mr-2'></i>
-                <span>Login or Register</span>
+                <span className='uppercase'>Login or Register</span>
               </button>
             </div>
           </div>
@@ -163,31 +167,31 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className='hidden' id='mobile-menu'>
+      <div id='mobile-menu'>
         <div className='space-y-1 px-2 pb-3 pt-2'>
           <Link
             href='/'
-            className='bg-black text-light block rounded-md px-3 py-2 text-base font-medium'
+            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
           >
             Home
           </Link>
           <Link
             href='/properties'
-            className='text-light block rounded-md px-3 py-2 text-base font-medium'
+            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
           >
             Properties
           </Link>
           <Link
             href='/properties/add'
-            className='text-light block rounded-md px-3 py-2 text-base font-medium'
+            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
           >
             Add Property
           </Link>
           <button
-            className='flex items-center text-light bg-gray-700 hover:bg-dark hover:text-light rounded-md px-3 py-2 my-5'
+            className='flex items-center text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2 my-5'
           >
             <i className='fa-brands fa-google mr-2'></i>
-            <span>Login or Register</span>
+            <span className='uppercase'>Login or Register</span>
           </button>
         </div>
       </div>
