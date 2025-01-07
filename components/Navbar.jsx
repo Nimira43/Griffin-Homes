@@ -167,34 +167,38 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id='mobile-menu'>
-        <div className='space-y-1 px-2 pb-3 pt-2'>
-          <Link
-            href='/'
-            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
-          >
-            Home
-          </Link>
-          <Link
-            href='/properties'
-            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
-          >
-            Properties
-          </Link>
-          <Link
-            href='/properties/add'
-            className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
-          >
-            Add Property
-          </Link>
-          <button
-            className='flex items-center text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2 my-5'
-          >
-            <i className='fa-brands fa-google mr-2'></i>
-            <span className='uppercase'>Login or Register</span>
-          </button>
-        </div>
-      </div>
+      { 
+        isMobileMenuOpen && (
+          <div id='mobile-menu'>
+            <div className='space-y-1 px-2 pb-3 pt-2'>
+              <Link
+                href='/'
+                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+              >
+                Home
+              </Link>
+              <Link
+                href='/properties'
+                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+              >
+                Properties
+              </Link>
+              <Link
+                href='/properties/add'
+                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+              >
+                Add Property
+              </Link>
+              <button
+                className='flex items-center text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2 my-5'
+              >
+                <i className='fa-brands fa-google mr-2'></i>
+                <span className='uppercase'>Login or Register</span>
+              </button>
+            </div>
+          </div>    
+        )
+      }
     </nav>
   )
 }
