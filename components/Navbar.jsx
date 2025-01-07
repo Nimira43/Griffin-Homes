@@ -2,12 +2,14 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import griffin from '@/assets/images/logo.png'
 import user from '@/assets/images/user.png'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   return ( 
     <nav className='bg-prime-dark border-b border-dark'>
@@ -54,19 +56,25 @@ const Navbar = () => {
               <div className='flex space-x-2'>
                 <Link
                   href='/'
-                  className='text-light bg-dark hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
+                  className={ `${
+                    pathname === '/' ? 'bg-dark' : ''
+                  } text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2` }
                 >
                   Home
                 </Link>
                 <Link
                   href='/properties'
-                  className='text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
+                  className={ `${
+                    pathname === '/properties' ? 'bg-dark' : ''
+                  } text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2` }
                 >
                   Properties
                 </Link>
                 <Link
                   href='/properties/add'
-                  className='text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2'
+                  className={ `${
+                    pathname === '/properties/add' ? 'bg-dark' : ''
+                  } text-light hover:bg-prime-dark-extra hover:text-grey-light rounded-md px-3 py-2` }
                 >
                   Add Property
                 </Link>
@@ -179,19 +187,19 @@ const Navbar = () => {
             <div className='space-y-1 px-2 pb-3 pt-2'>
               <Link
                 href='/'
-                className='text-light bg-dark hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+                className={ `${pathname === '/' ? 'bg-dark' : ''} text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium` }
               >
                 Home
               </Link>
               <Link
                 href='/properties'
-                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+                className={ `${pathname === '/properties' ? 'bg-dark' : ''} text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium` }
               >
                 Properties
               </Link>
               <Link
                 href='/properties/add'
-                className='text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium'
+                className={ `${pathname === '/properties/add' ? 'bg-dark' : ''} text-light hover:text-grey-light hover:bg-prime-dark-extra block rounded-md px-3 py-2 text-base font-medium` }
               >
                 Add Property
               </Link>
