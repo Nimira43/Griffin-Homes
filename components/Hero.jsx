@@ -1,6 +1,8 @@
 const Hero = () => {
   return ( 
-    <div>Hero</div>
+    <section className="py-20 mb-4 bg-prime-light">
+
+    </section>
    )
 }
  

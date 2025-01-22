@@ -4,6 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root {
+  --prime-dark-extra: #012222; 
+  --prime-dark: #024747; 
+  --prime-medium-extra: #036262; 
+  --prime-medium: #048b8b; 
+  --prime-light: #70f6f6; 
+  --dark: #111;
+  --light: #fcffff;
+  --grey-extra-light: #eee;
+  --grey-light: #ccc;
+  --grey-medium: #888;
+  --grey-dark: #333;
+  --secondary: #ff4500;
+  --secondary-light: #f6a588;
+} */
+
 .logo {
   font-family: 'Great Vibes', serif;
 }
