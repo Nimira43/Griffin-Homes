@@ -2,7 +2,7 @@ import '@/assets/styles/globals.css'
 import Navbar from '@/components/Navbar'
 
 export const metadata ={
-  title: 'Unicorn Homes',
+  title: 'Griffin Homes',
   keyword: 'properties, home, real estate, house, flat, apartment, rental',
   description: 'Property website using Next JS'
 }
@@ -10,7 +10,7 @@ export const metadata ={
 const MainLayout = ({ children }) => {
   return ( 
     <html>
-      <body>
+      <body> 
         <main>
           <Navbar />
           {children}
