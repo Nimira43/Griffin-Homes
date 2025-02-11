@@ -63,7 +63,7 @@ const Hero = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-          <button className="md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-md bg-prime-dark text-light hover:bg-prime-dark-extra hover:text-grey-light focus:outline-none uppercase "
+          <button className="md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-md bg-dark text-light hover:bg-prime-dark-extra hover:text-grey-light focus:outline-none uppercase "
           >
             Search
           </button>
