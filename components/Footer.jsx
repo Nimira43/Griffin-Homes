@@ -3,6 +3,8 @@ import Link from 'next/link'
 import griffin from '@/assets/images/logo.png'
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
+
   return ( 
     <footer className='bg-dark py-4 mt-24'>
       <div
@@ -26,7 +28,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className='text-light hover:text-grey-light' href='/terms'
+              <Link className='text-light hover:text-grey-light' href='/'
               >
                 Terms & Conditions
               </Link>
@@ -35,7 +37,7 @@ const Footer = () => {
         </div>
         <div>
           <p className='text-sm text-light hover:text-grey-light mt-2 md:mt-0'>
-            &copy; 2025 Griffin Homes. All rights reserved.
+            &copy; {currentYear} Griffin Homes. All rights reserved.
           </p>
         </div>
       </div>
