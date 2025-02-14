@@ -16,7 +16,7 @@ module.exports = {
         'prime-light': '#ccf9f9',  
         'dark': '#111',
         'light': '#fffaf0',
-        'grey-extra-light': '#eee',
+        'grey-light-extra': '#eee',
         'grey-light': '#ccc',
         'grey-medium': '#888',
         'grey-dark': '#333',
