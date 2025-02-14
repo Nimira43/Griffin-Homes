@@ -19,8 +19,18 @@ const Footer = () => {
           className='flex flex-wrap justify-center md:justify-start mb-4 md:mb-0'
         >
           <ul className='flex space-x-4'>
-            <li><a className='text-light hover:text-grey-light' href='/properties.html'>Properties</a></li>
-            <li><a className='text-light hover:text-grey-light' href='/terms.html'>Terms & Conditions</a></li>
+            <li>
+              <Link className='text-light hover:text-grey-light' href='/properties'
+              >
+                Properties
+              </Link>
+            </li>
+            <li>
+              <Link className='text-light hover:text-grey-light' href='/terms'
+              >
+                Terms & Conditions
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
