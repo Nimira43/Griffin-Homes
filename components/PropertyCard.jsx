@@ -18,8 +18,8 @@ const PropertyCard = ({ property }) => {
       />
       <div className='p-4'>
         <div className='text-left md:text-center lg:text-left mb-6'>
-          <div className='text-prime-medium-extra'>Apartment</div>
-          <h3 className='text-xl font-bold'>Boston Commons Retreat</h3>
+          <div className='text-prime-medium-extra'>{ property.type }</div>
+          <h3 className='text-xl font-bold'>{ property.name }</h3>
         </div>
         <h3
           className='absolute top-[10px] right-[10px] bg-light px-4 py-2 rounded-lg text-prime-medium-extra font-bold text-right md:text-center lg:text-right'
@@ -29,15 +29,17 @@ const PropertyCard = ({ property }) => {
 
         <div className='flex justify-center gap-4 text-grey-dark mb-4'>
           <p>
-            <LiaBedSolid className='fa-solid fa-bed' /> 3
-            <span className='md:hidden lg:inline'> Beds</span>
+            <LiaBedSolid className='fa-solid fa-bed' />{property.beds}{' '}
+            <span className='md:hidden lg:inline'>Beds</span>
           </p>
           <p>
-            <LiaBathSolid className='fa-solid fa-bath' /> 2
-            <span className='md:hidden lg:inline'> Baths</span>
+            <LiaBathSolid className='fa-solid fa-bath' />
+            {property.baths}{' '}
+            <span className='md:hidden lg:inline'>Baths</span>
           </p>
           <p>
-            <LiaRulerCombinedSolid className='fa-solid fa-ruler-combined' /> 1,500
+            <LiaRulerCombinedSolid className='fa-solid fa-ruler-combined' />
+            {property.square_feet}{' '}
             <span className='md:hidden lg:inline'>sqft</span>
           </p>
         </div>
@@ -56,10 +58,12 @@ const PropertyCard = ({ property }) => {
             <MdOutlineLocationOn
               className='fa-solid fa-location-dot text-lg text-prime-medium-extra'
             />
-            <span className='text-prime-medium-extra'> Boston MA </span>
+            <span className='text-prime-medium-extra'>
+              {property.location.city}, {property.location.county}
+            </span>
           </div>
           <Link
-            href='property.html'
+            href={`/properties/${property._id}`}
             className='h-[36px] bg-dark hover:bg-prime-dark-extra text-light hover:text-grey-light uppercase px-4 py-2 rounded-lg text-center text-sm'
           >
             Details

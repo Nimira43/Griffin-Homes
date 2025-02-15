@@ -2,9 +2,9 @@
   {
     "_id": "1",
     "owner": "1",
-    "name": "Norwich Commons Retreat",
+    "name": "City Centre Apartment",
     "type": "Apartment",
-    "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
+    "description": "This is a beautiful apartment located near the City Centre. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
     "location": {
       "street": "120 Tremont Street",
       "city": "Norwich",
