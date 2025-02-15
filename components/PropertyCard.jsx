@@ -3,15 +3,17 @@ import Link from 'next/link'
 import { LiaBedSolid, LiaBathSolid, LiaRulerCombinedSolid} from 'react-icons/lia'
 import { RiMoneyPoundCircleLine } from 'react-icons/ri'
 import { MdOutlineLocationOn } from 'react-icons/md';
-import rental from '@/assets/images/properties/a1.jpg'
 
 const PropertyCard = ({ property }) => {
   
   return ( 
     <div className='rounded-xl shadow-md relative'>
       <Image
-        src={rental}
+        src={`/images/properties/${property.images[0]}`}
         alt='Rental'
+        width='0'
+        height='0'
+        sizes='100vw'
         className='w-full h-auto rounded-t-xl'
       />
       <div className='p-4'>
