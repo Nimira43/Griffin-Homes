@@ -29,26 +29,30 @@ const PropertyCard = ({ property }) => {
 
         <div className='flex justify-center gap-4 text-grey-dark mb-4'>
           <p>
-            <LiaBedSolid className='fa-solid fa-bed' />{property.beds}{' '}
-            <span className='md:hidden lg:inline'>Beds</span>
+            <LiaBedSolid className='md:hidden lg:inline' />{property.beds}{' '}
+            <span className='md:hidden lg:inline'> Beds</span>
           </p>
           <p>
-            <LiaBathSolid className='fa-solid fa-bath' />
+            <LiaBathSolid className='md:hidden lg:inline' />
             {property.baths}{' '}
-            <span className='md:hidden lg:inline'>Baths</span>
+            <span className='md:hidden lg:inline'> Baths</span>
           </p>
           <p>
-            <LiaRulerCombinedSolid className='fa-solid fa-ruler-combined' />
+            <LiaRulerCombinedSolid className='md:hidden lg:inline' />
             {property.square_feet}{' '}
-            <span className='md:hidden lg:inline'>sqft</span>
+            <span className='md:hidden lg:inline'> sqft</span>
           </p>
         </div>
 
         <div
           className='flex justify-center gap-4 text-prime-medium-extra text-sm mb-4'
         >
-          <p><RiMoneyPoundCircleLine className='fa-solid fa-money-bill' /> Weekly</p>
-          <p><RiMoneyPoundCircleLine className='fa-solid fa-money-bill' /> Monthly</p>
+          <p>
+            <RiMoneyPoundCircleLine className='md:hidden lg:inline' /> Weekly
+          </p>
+          <p>
+            <RiMoneyPoundCircleLine className='md:hidden lg:inline' /> Monthly
+          </p>
         </div>
 
         <div className='border border-prime-light mb-5'></div>
@@ -56,7 +60,7 @@ const PropertyCard = ({ property }) => {
         <div className='flex flex-col lg:flex-row justify-between mb-4'>
           <div className='flex align-middle gap-2 mb-4 lg:mb-0'>
             <MdOutlineLocationOn
-              className='fa-solid fa-location-dot text-lg text-prime-medium-extra'
+              className='text-prime-medium-extra mt-1'
             />
             <span className='text-prime-medium-extra'>
               {property.location.city}, {property.location.county}
