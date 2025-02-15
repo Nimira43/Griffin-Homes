@@ -5,6 +5,16 @@ import { RiMoneyPoundCircleLine } from 'react-icons/ri'
 import { MdOutlineLocationOn } from 'react-icons/md';
 
 const PropertyCard = ({ property }) => {
+  const getRateDisplay = () => {
+    const { rates } = property
+    if (rates.monthly) {
+      return `£${rates.monthly.toLocaleString()}/monthly`
+    } else if (rates.weekly) {
+      return `£${rates.weekly.toLocaleString()}/weekly`
+    } else if (rates.nightly) {
+      return `£${rates.nightly.toLocaleString()}/nightly`
+    }
+  }
   
   return ( 
     <div className='rounded-xl shadow-md relative'>
@@ -24,7 +34,7 @@ const PropertyCard = ({ property }) => {
         <h3
           className='absolute top-[10px] right-[10px] bg-light px-4 py-2 rounded-lg text-prime-medium-extra font-bold text-right md:text-center lg:text-right'
         >
-          £4,200/mo
+          {getRateDisplay()}
         </h3>
 
         <div className='flex justify-center gap-4 text-grey-dark mb-4'>
