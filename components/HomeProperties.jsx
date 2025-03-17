@@ -34,5 +34,5 @@ const HomeProperties = () => {
     
   )
 }
- 
+  
 export default HomeProperties
