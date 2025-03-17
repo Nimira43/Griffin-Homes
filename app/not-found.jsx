@@ -22,7 +22,7 @@ const NotFoundPage = () => {
               We can't find the page you are looking for.
             </p>
             <Link
-              href='/index.html'
+              href='/'
               className='bg-dark hover:bg-prime-dark-extra text-light hover:text-grey-light py-4 px-6 rounded-md uppercase'
             >
               Go Home
