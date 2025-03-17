@@ -1,6 +1,6 @@
 'use client'
 
-import { ClipLoader } from 'react-spinners'
+import ClipLoader from 'react-spinners/ClipLoader'
 
 const LoadingPage = () => {
   return ( 
