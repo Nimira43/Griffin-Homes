@@ -4,7 +4,8 @@ import InfoBoxes from '@/components/InfoBoxes'
 // import connectDB from '@/config/database'
 
 const HomePage = () => {
-  // connectDB()
+  console.log(process.env.MONGODB_URI)
+
   return ( 
     <>
       <Hero />
