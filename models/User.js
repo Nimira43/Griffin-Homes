@@ -19,4 +19,10 @@ const UserSchema = new Schema({
       ref: 'Property'
     }
   ]
+}, {
+  timestamps: true
 })
+
+const User = models.User || model('User', UserSchema)
+
+export default User
