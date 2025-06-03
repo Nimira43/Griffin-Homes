@@ -1,6 +1,6 @@
 import { Schema, model, models } from 'mongoose'
 
-const UserSchema = new Schema({
+const PropertySchema = new Schema({
   email: {
     type: String,
     unique: [true, 'Email already exists.'],
@@ -23,6 +23,6 @@ const UserSchema = new Schema({
   timestamps: true
 })
 
-const User = models.User || model('User', UserSchema)
+const Property = models.Property || model('Property', PropertySchema)
 
-export default User
+export default Property
