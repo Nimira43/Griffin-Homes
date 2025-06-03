@@ -18,8 +18,34 @@ const PropertySchema = new Schema({
     type: String,
   },
   location: {
-
+    street: String,
+    city: String,
+    county: String,
+    postcode: String
+  },
+  beds: {
+    type: Number,
+    required: true
+  },
+  baths: {
+    type: Number,
+    required: true
+  },
+  square_feet: {
+    type: Number,
+    required: true
+  },
+  amenities: [
+    {
+      type: String 
+    },
+  ],
+  rate: {
+    nightly: Number,
+    weekly: Number,
+    monthly: Number
   }
+
 }, {
   timestamps: true
 })
