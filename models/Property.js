@@ -1,24 +1,25 @@
 import { Schema, model, models } from 'mongoose'
 
 const PropertySchema = new Schema({
-  email: {
-    type: String,
-    unique: [true, 'Email already exists.'],
-    required: [true, 'Email is required.']
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   },
-  username: {
+  name: {
     type: String,
-    required: [true, 'Username is required.']
+    required: true, 
   },
-  image: {
+  type: {
+    type: String,
+    required: true,
+  },
+  description: {
     type: String,
   },
-  bookmarks: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Property'
-    }
-  ]
+  location: {
+
+  }
 }, {
   timestamps: true
 })
