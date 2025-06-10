@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: { 
         'prime-dark-extra': '#012222', 
-        'prime-dark': '#024747', 
+        'prime-dark': '#035252', 
         'prime-medium-extra': '#036262', 
         'prime-medium': '#048b8b', 
         'prime-light-extra': '#70f6f6',  

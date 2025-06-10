@@ -1,5 +1,6 @@
 import PropertyCard from '@/components/PropertyCard'
 import properties from '@/properties.json'
+import connectDB from '@/config/database'
 
 const PropertiesPage = () => {
   return ( 
