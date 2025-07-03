@@ -14,6 +14,7 @@ module.exports = {
         'prime-medium': '#048b8b', 
         'prime-light-extra': '#70f6f6',  
         'prime-light': '#ccf9f9',  
+        'gold': 'ffd700',
         'dark': '#111',
         'light': '#fffaf0',
         'grey-light-extra': '#eee',
